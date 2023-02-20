@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="bastard-munchen" class="it.kg.BastardMunchen">
+        <property name="countryOfOrigin" value="Germany"/>
+        <property name="members">
+            <list>
+                <value>Noel Noa</value>
+                <value>Michael Kaiser</value>
+                <value>Rensuke Kunigami</value>
+                <value>Benedict Grim</value>
+                <value>Erik Gesner</value>
+                <value>Yoichi Isagi</value>
+                <value>Alexis Ness</value>
+                <value>Ranze Kurona</value>
+                <value>Kenyu Yukimiya</value>
+                <value>Gin Gagamaru</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="mashine-city" class="it.kg.ManshineCity">
+        <constructor-arg type="java.lang.String" value="England"/>
+        <constructor-arg>
+            <array value-type="java.lang.String">
+                <value>Chris Prince</value>
+                <value>Agi</value>
+                <value>Hyoma Chigiri</value>
+                <value>Seishiro Nagi</value>
+                <value>Reo Mikage</value>
+                <value>Junichi Wanima</value>
+                <value>Taiga Tsunzaki</value>
+                <value>Kazums Nio</value>
+                <value>Hajime Nishioka</value>
+                <value>Reiji Hiiragi</value>
+                <value>Kairu Saramadara</value>
+            </array>
+        </constructor-arg>
+    </bean>
+
+</beans>

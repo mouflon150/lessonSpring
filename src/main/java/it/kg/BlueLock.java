@@ -5,13 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class ManshineCity {
+public class BlueLock {
 
-    private String countryOfOrigin;
-    private String[] members;
+    private String firstTeamLeader;
+    private BastardMunchen team1;
+    private String secondTeamLeader;
+    private ManshineCity team2;
 }

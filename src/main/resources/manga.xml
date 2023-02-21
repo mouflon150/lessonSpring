@@ -4,6 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <bean id="blue-lock" class="it.kg.BlueLock">
+        <property name="firstTeamLeader" value="Noel Noa"/>
+        <property name="team1" ref="bastard-munchen"/>
+        <property name="secondTeamLeader" value="Chris Prince"/>
+        <property name="team2" ref="mashine-city"/>
+    </bean>
+
     <bean id="bastard-munchen" class="it.kg.BastardMunchen">
         <property name="countryOfOrigin" value="Germany"/>
         <property name="members">
